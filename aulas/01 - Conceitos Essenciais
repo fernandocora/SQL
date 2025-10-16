@@ -1,3 +1,10 @@
  Conceitos Essenciais de SQL
 
 o SQL é uma linguagem para bancos de dados Relacionais portanto devemos entender sua estrutura:
+
+O modelo Relacional organiza os dados em Tabelas Relacionadas, isso é, ele organiza os dados em
+Tabelas que ter relações com outras tabelas 
+
+A tabela é estruturada por Linhas e Colunas
+
+<img src="https://targettrust.com.br/wp-content/uploads/2015/06/Tabela1-e1501181388537.png" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 430px; height: 371px; margin: 0px; width: 304px;" alt="Comando SELECT: O que é e como usar para consultar dados em SQL [2023]" jsname="kn3ccd">
