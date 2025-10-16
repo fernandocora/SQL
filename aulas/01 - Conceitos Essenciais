@@ -1,10 +1,67 @@
  Conceitos Essenciais de SQL
 
+1- ESTRUTURA
 o SQL é uma linguagem para bancos de dados Relacionais portanto devemos entender sua estrutura:
 
 O modelo Relacional organiza os dados em Tabelas Relacionadas, isso é, ele organiza os dados em
-Tabelas que ter relações com outras tabelas 
+Tabelas que podem ter relações com outras tabelas 
 
 A tabela é estruturada por Linhas e Colunas
+Podemos ver a estrutura de uma tabela mostrando linhas e colunas logo abaixo 
 
-<img src="https://targettrust.com.br/wp-content/uploads/2015/06/Tabela1-e1501181388537.png" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 430px; height: 371px; margin: 0px; width: 304px;" alt="Comando SELECT: O que é e como usar para consultar dados em SQL [2023]" jsname="kn3ccd">
+*TABELA CLIENTES*           
+
+       Coluna          Coluna               Coluna       Coluna       Coluna
+id	| nome	email      |	data_nascimento	| cidade         |	ativo |	data_cadastro
+1	 |Ana Silva		      |1990-05-15	      |São Paulo	      |true	  |2024-01-15 10:30:00  <--- Linhas ou Tuplas
+2  |Carlos Oliveira	 |1985-08-22       |Rio de Janeiro  |true	  |2024-01-15 10:31:00  <--- Linhas ou Tuplas
+3  |Mariana Santos	 	|1992-12-10	      |Belo Horizonte	 |true	  |2024-01-15 10:32:00  <--- Linhas ou Tuplas
+
+Usando termos mais tecnicos:
+
+Toda tabela é uma ENTIDADE ou podemos chamar de RELAÇÃO
+Linhas podem ser chamadas de tuplas e Colunas de Atributos
+
+Nesse modelo os dados são ocorrências da tabela, pois a tabela Clientes representa o conjunto de todos os clientes da empresa
+Portanto, Ana Silva é uma ocorrência de CLIENTES
+Cada linha dentro da Tabela é uma ocorrência individual dessa ENTIDADE
+
+2- INTEGRIDADE
+O que é Integridade de Dados?
+Imagine uma biblioteca onde os livros podem ser colocados em qualquer prateleira, sem organização, 
+sem catálogo, e onde qualquer pessoa pode modificar as informações sem controle. O caos seria total!
+Integridade em bancos de dados é exatamente o oposto disso: é o conjunto de regras e mecanismos que garantem 
+que os dados permaneçam corretos, consistentes e confiáveis ao longo do tempo.
+
+Integridade é a garantia de que os dados estão corretos, consistentes e confiáveis ao longo do tempo
+
+Por que a Integridade é Crucial?
+A Integridade dos dados se faz necessária para evitar dados duplicados, mal relacionados e inconsistentes
+
+Principais Pilares da Integridade Relacional
+2.1 Integridade de Entidade
+Objetivo: Garantir que cada registro seja único e identificável
+
+Chave Primária (PRIMARY KEY): Identificador único e obrigatório
+Chaves Únicas (UNIQUE): Garantem que valores não se repitam
+Campos Obrigatórios (NOT NULL): Previnem dados faltantes
+Exemplo.: O atributo CPF de um cliente precisa ser seu identificador, não pode exister outro cliente com o mesmo CPF e
+precisa ser obrigatório
+
+2.2 Integridade Referencial
+Objetivo: Manter relacionamentos entre tabelas consistentes(Fazem as ligações entre tabelas)
+
+Chaves Estrangeiras (FOREIGN KEY): Garantem que referências entre tabelas sejam válidas
+Ações em Cascata: Controlam o que acontece quando dados relacionados são modificados
+
+3. Manipulação
+
+A manipulação de dados consiste em operações para criar, ler, atualizar e excluir informações no banco de dados
+Sigla CRUD
+
+3.1 CREATE
+3.2 READ
+3.3 UPDATE
+3.4 DELETE
+
+Veremos comando para manipulação e definição de dados nas proximas aulas
