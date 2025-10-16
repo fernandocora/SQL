@@ -13,9 +13,9 @@ Podemos ver a estrutura de uma tabela mostrando linhas e colunas logo abaixo
 
        Coluna          Coluna               Coluna       Coluna       Coluna
 id | nome	      | data_nascimento | cidade          | ativo  | data_cadastro
-1  |Ana Silva	      |1990-05-15	   |São Paulo	       |true	  |2024-01-15 10:30:00  <--- Linhas ou Tuplas
-2  |Carlos Oliveira |1985-08-22       |Rio de Janeiro   |true	  |2024-01-15 10:31:00  <--- Linhas ou Tuplas
-3  |Mariana Santos  |1992-12-10	   |Belo Horizonte   |true	  |2024-01-15 10:32:00  <--- Linhas ou Tuplas
+1  |Ana Silva	      |1990-05-15	   |São Paulo	       |true	  |2024-01-15 10:30:00  
+2  |Carlos Oliveira |1985-08-22       |Rio de Janeiro   |true	  |2024-01-15 10:31:00  
+3  |Mariana Santos  |1992-12-10	   |Belo Horizonte   |true	  |2024-01-15 10:32:00  
 
 Usando termos mais tecnicos:
 
